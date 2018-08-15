@@ -1,0 +1,45 @@
+header {
+    
+}
+
+header nav {
+    
+}
+
+header nav .nav-search button, 
+header nav .nav-search button:hover {
+    background-color: #f56a80
+}
+
+header nav .nav-search input,
+header nav .nav-search select,
+header nav .nav-search button {
+    font-size: 12px; 
+}
+
+header nav .nav-user {
+    font-weight: bold; 
+}
+
+header nav .nav-user-points {
+   border-radius: 2px; 
+   background-color: #f3f3f3;
+   padding: 5px; 
+   line-height: 15px;
+   font-weight: 500; 
+}
+
+header nav .nav-user-points .user-points-amount {
+    font-size: 13px;
+}
+
+header nav .nav-user-points .user-points-label {
+    font-size: 11px; 
+}
+
+header nav .nav-user-controls a {
+    color: black; 
+    font-size: 12px; 
+    text-decoration: none; 
+    font-weight: 500; 
+}

@@ -6,8 +6,15 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/> 
         
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+        
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+        
+        <link rel="stylesheet" href="css/multirange/multirange.css"/>
+        
+        <link rel="stylesheet" href="css/header.css"/>
         <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/footer.css"/> 
+        <link rel="stylesheet" href="css/helpers.css"/>
     </head>
     <body>
         <header>
@@ -42,7 +49,7 @@
                         </div>
                         <div class="nav-user-controls navbar-text">
                             <a href="#">
-                                <span class="text-danger">(1)</span> Foo <i class="fas fa-angle-down"></i>
+                                <span class="text-danger font-weight-bold">(1)</span> Foo <i class="fas fa-angle-down"></i>
                             </a>
                         </div>
                     </div>
@@ -53,8 +60,153 @@
             <div class="container-fluid text-center main-pre-content p-2">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </div>
-            <div class="container">
-                Contenido
+            <div class="container py-5">
+                <div class="row">
+                    <section class="filters col-md-4 col-12">
+                        <div class="filters-main col-main">
+                            <div class="filters-nav nav nav-tabs text-center d-flex justify-content-between" role="tablist">
+                                <a id="nav-filter-calendar-tab" data-toggle="tab" href="#filter-calendar" role="tab" aria-controls="filter-calendar" aria-selected="true">
+                                    Calendario
+                                </a>
+                                <a id="nav-filter-list-tab" data-toggle="tab" href="#filter-list" role="tab" aria-controls="filter-list" aria-selected="false">
+                                    Lista
+                                </a>
+                                <a id="nav-filter-map-tab" data-toggle="tab" href="#filter-map" role="tab" aria-controls="filter-map" aria-selected="false">
+                                    Mapa
+                                </a>
+                            </div>
+                            <div class="filters-tabs tab-content">
+                                <div id="filter-calendar" class="filters-tab tab-pane fade in show active" role="tabpanel" aria-labelledby="nav-filter-calendar-tab">
+                                    <div class="filters-body">
+                                        <div class="filters-input-range">
+                                            Filters Input Range
+                                        </div>
+                                        <div class="filters-category">
+                                            <div class="filters-category-header">
+                                                <span>Ubicación</span>
+                                                <a href="#location" data-toggle="collapse">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <div id="location" class="collapse">
+                                                Location Body
+                                            </div>
+                                        </div>
+                                        <div class="filters-category">
+                                            <div class="filters-category-header">
+                                                <span>Edad</span>
+                                                <a href="#age" data-toggle="collapse">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <div id="age" class="collapse">
+                                                Age Body
+                                            </div>
+                                        </div>
+                                        <div class="filters-category">
+                                            <div class="filters-category-header">
+                                                <span>Categorías</span>
+                                                <a href="#categories" data-toggle="collapse">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                           <div id="categories" class="collapse">
+                                               Categories Body
+                                           </div>
+                                        </div>
+                                        <div class="filters-category">
+                                            <div class="filters-category-header">
+                                                <span>Precios</span>
+                                                <a href="#prices" data-toggle="collapse">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <div id="prices" class="collapse">
+                                                Precios
+                                            </div>
+                                        </div>
+                                        <div class="filters-category">
+                                            <div class="filters-category-header">
+                                                <span>Proveedores</span>
+                                                <a href="#providers" data-toggle="collapse">
+                                                    <i class="fas fa-angle-down"></i>
+                                                </a>
+                                            </div>
+                                            <div id="providers" class="collapse">
+                                                Proveedores
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="filter-list" class="filters-tab tab-pane fade" role="tabpanel" aria-labelledby="nav-filter-list-tab">
+                                    Lista
+                                </div>
+                                <div id="filter-map" class="filters-tab tab-pane fade" role="tabpanel" aria-labelledby="nav-filter-map-tab">
+                                    Mapa
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="activities col-md-8 col-12">
+                        <div class="activities-main col-main">
+                            <div class="activities-nav nav nav-tabs text-center d-flex justify-content-between" role="tablist">
+                                <a id="nav-back" href="#">
+                                    <i class="fas fa-angle-left fa-fw"></i>
+                                </a> 
+                                <a id="nav-back" href="#">
+                                    <span>DOM</span>
+                                    <span>16/7</span>
+                                </a> 
+                                <a id="nav-back" href="#">
+                                    <span>LUN</span>
+                                    <span>17/7</span>
+                                </a> 
+                                <a id="nav-back" href="#">
+                                    <span>MAR</span>
+                                    <span>18/7</span>
+                                </a> 
+                                <a id="nav-back" href="#">
+                                    <span>MIE</span>
+                                    <span>19/7</span>
+                                </a> 
+                                <a id="nav-back" href="#">
+                                    <span>JUE</span>
+                                    <span>20/7</span>
+                                </a> 
+                                <a id="nav-back" href="#">
+                                    <span>VIE</span>
+                                    <span>21/7</span>
+                                </a> 
+                                <a id="nav-back" href="#">
+                                    <span>SAB</span>
+                                    <span>22/7</span>
+                                </a> 
+                                <a id="nav-back" href="#">
+                                    <span>DOM</span>
+                                    <span>23/7</span>
+                                </a> 
+                                <a id="nav-back" href="#">
+                                    <i class="fas fa-angle-right fa-fw"></i>
+                                </a> 
+                            </div>
+                            <div class="activities-by-day">
+                                <div class="current-day d-flex justify-content-space-evenly">
+                                    
+                                        <h4>Domingo, 17 de Julio</h4>
+                                        <div class="col-4 d-flex flex-column justify-content-center">
+                                            <div class="form-search-in-day">
+                                                <input type="text" placeholder="Buscar por actividad o proveedor">
+                                                <button>
+                                                    <i class="fas fa-search"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                       
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </main>
         <footer>
@@ -135,5 +287,8 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        
+        <script src="js/multirange/multirange.js"></script>
+                
     </body>
 </html>
