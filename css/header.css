@@ -43,3 +43,38 @@ header nav .nav-user-controls a {
     text-decoration: none; 
     font-weight: 500; 
 }
+
+header .navbar-mobile a {
+    color: #333; 
+}
+
+/* Mobile Menu */
+
+.mobile-menu {
+    position: fixed;
+    top: 0; 
+    left:-50vw; 
+    width: 50vw; 
+    height: 100vh;
+    background-color: green; 
+    overflow: auto; 
+    padding: 1em; 
+}
+
+.mobile-menu hr {
+    border-color: white; 
+}
+
+.mobile-menu a {
+    color: white; 
+    font-weight: 500; 
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding-left: 0; 
+}
+
+.mobile-menu ul li:not(:last-child) {
+    margin-bottom: 0.5em; 
+}
