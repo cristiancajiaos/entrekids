@@ -12,12 +12,54 @@ main .col-main {
     border: 1px solid #c8c8c8; 
 }
 
+main .filters-bar {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em; 
+    background-color: #eee;
+}
+
+main .filters-bar a {
+    color: black; 
+}
+
+main .filters-bar form input[type=search] {
+    font-size: 12px;
+    border: 0; 
+    position:relative;
+    left:30px;
+    background-color: #ddd; 
+    border-radius: 4px; 
+    padding-left: 2px;
+    padding-right: 2px; 
+    width:250px; 
+}
+
+main .filters-bar form button {
+    font-size: 12px; 
+    border: 0;
+    position: relative;
+    background-color: #ddd; 
+    border-radius: 4px; 
+}
+
 /* El corte del media query es de 767px para ser 
    consistente con el tamaño de quiebre para cambio
    del diseño establecido en el HTML */ 
 @media screen and (max-width: 767px) { 
     main .container .row > *:not(:last-child) {
         margin-bottom: 1em; 
+    }
+}
+
+@media screen and (max-width:767px) {
+    main .filters {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    main .filters {
+        display: block !important;
     }
 }
 

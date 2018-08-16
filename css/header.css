@@ -56,9 +56,10 @@ header .navbar-mobile a {
     left:-50vw; 
     width: 50vw; 
     height: 100vh;
-    background-color: green; 
+    background-color: #1297f4;
     overflow: auto; 
     padding: 1em; 
+    z-index:999; 
 }
 
 .mobile-menu hr {

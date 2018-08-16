@@ -6,7 +6,6 @@ $(function(){
     
     menuOpen.on("click", function(){
         if (!menuVisible) {
-            console.log("foo"); 
             $("#mobileMenu").animate({left:"0vw"}, "fast", function(){
                 menuVisible = true; 
             });
