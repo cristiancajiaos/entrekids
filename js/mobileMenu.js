@@ -4,19 +4,25 @@ $(function(){
     let menuOpen = $("#menuOpen");
     let menuClose = $("#menuClose"); 
     
-    menuOpen.on("click", function(){
+    menuOpen.on("click", openMenu);
+
+    menuClose.on("click", closeMenu);
+    $("header").on("click", closeMenu); 
+    $("main").on("click", closeMenu);
+    
+    function openMenu(){
         if (!menuVisible) {
             $("#mobileMenu").animate({left:"0vw"}, "fast", function(){
                 menuVisible = true; 
             });
         }
-    });
+    }
     
-    menuClose.on("click", function(){
+    function closeMenu(){
         if (menuVisible) {
             $("#mobileMenu").animate({left:"-50vw"}, "fast", function(){
                 menuVisible = false; 
             });
         }
-    });
+    }
 });

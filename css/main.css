@@ -23,7 +23,7 @@ main .filters-bar a {
 }
 
 main .filters-bar form input[type=search] {
-    font-size: 12px;
+    font-size: 0.75rem; 
     border: 0; 
     position:relative;
     left:30px;
@@ -35,7 +35,7 @@ main .filters-bar form input[type=search] {
 }
 
 main .filters-bar form button {
-    font-size: 12px; 
+    font-size: 0.75em; 
     border: 0;
     position: relative;
     background-color: #ddd; 
@@ -233,13 +233,13 @@ main .activities .activity .activity-details {
 }
 
 main .activities .activity .activity-details h5 {
-    font-size: 14px;
+    font-size: 0.875rem; 
     color: #1eb2e8;
     margin-bottom: 3px; 
 }
 
 main .activities .activity .activity-details p {
-    font-size: 12px; 
+    font-size: 0.75rem; 
     margin-bottom: 3px;
     color: #777777;
 }
@@ -272,7 +272,7 @@ main .activities .activity .activity-details .activity-more p {
 
 main .activities .activity .closed-reservations { 
     text-align: center; 
-    font-size: 11px;
+    font-size: 0.6875rem; 
     background-color: #eef6f9; 
     border-radius: 3px; 
 }
