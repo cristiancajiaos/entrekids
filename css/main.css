@@ -248,9 +248,12 @@ main .activities .activity .activity-details > *:not(:last-child) {
     margin-right: 5px; 
 }
 
-main .activities .activity .activity-details .activity-type img {
+main .activities .activity .activity-details .activity-type {
     width: 30px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main .activities .activity .activity-details .activity-priceandhours *:nth-child(3) {
